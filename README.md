@@ -1,6 +1,7 @@
 # mlflow-docker
 
 ![docker build](https://img.shields.io/github/actions/workflow/status/cjjcastro/mlflow-docker/docker-image.yml?label=docker%20build)
+![docker pulls](https://img.shields.io/docker/pulls/cjjcastro/mlflow)
 
 ## Getting started
 
