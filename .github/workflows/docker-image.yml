@@ -20,7 +20,7 @@ jobs:
           images: |
             cjjcastro/mlflow
           tags: |
-            type=raw,value=latest,enable=${{ github.ref == format('refs/heads/{0}', 'master') }}
+            type=raw,value=latest,enable=${{ github.ref == format('refs/heads/{0}', 'main') }}
             type=raw,value={{tag}}
           flavor: latest=true
       - name: Set up QEMU
