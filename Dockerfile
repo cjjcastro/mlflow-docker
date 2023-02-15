@@ -1,4 +1,4 @@
-FROM python:3-slim
+FROM python:3.10-slim
 LABEL maintainer="Cleber Castro <cjj.castro3@gmail.com>"
 
 WORKDIR /mlflow/
