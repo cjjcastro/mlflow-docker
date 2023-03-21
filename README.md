@@ -24,3 +24,20 @@ git push -uf origin main
 ```
 docker pull cjjcastro/mlflow:latest
 ```
+
+### Docker Compose
+
+```yml
+version: "3.11"
+
+services:
+  mlflow:
+    image: cjjcastro/mlflow
+    ports:
+      - "5000:5000"
+    volumes:
+      - /mlflow/artifacts:/mlflow/artifacts
+    environment:
+      BACKEND_URI: sqlite:////mlflow/mlflow.db
+      ARTIFACT_ROOT: /mlflow/artifacts
+```
